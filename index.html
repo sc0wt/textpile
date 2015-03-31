@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>textpile</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="textpile.css">
+    
+  
+	
+  </head>
+  
+  <body>
+  	
+  	<div id="container">
+  	
+  		<div class="fader">&emsp;</div>
+  		<div class="fader">&#9995;</div>
+  		<div class="fader">Hello</div>
+  		<div class="fader">I am a</div>
+  		<div class="fader">graphic</div>
+  		<div class="fader">designer,</div>
+  		<div class="fader">and I</div>
+  		<div class="fader">also make</div>
+  		<div class="fader">furniture</div>
+  		
+  	
+  	</div>
+  	
+  		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js'></script>  
+
+      <script>
+	    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fader').each( function(i){
+           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},300);
+                    
+		            }
+		            
+		        }); 
+		    
+		    });
+		    
+		});
+	</script>
+  
+  </body>
+ 
+  
+</html>

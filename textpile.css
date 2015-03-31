@@ -1,0 +1,23 @@
+#container {
+	height: 100%;
+	width: auto;
+	background: black;
+	overflow-x: hidden;
+}
+
+#container div {
+	font-family: times;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+    height: 20vw;
+    padding: 100px 0 100px 0;
+    font-size: 10em;
+    color: black;
+    text-shadow: 3px 3px rgb(255,40,40);
+    text-align: center;
+  
+}
+
+.fader {
+	opacity: 0;
+}
