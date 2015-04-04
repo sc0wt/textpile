@@ -21,3 +21,17 @@
 .fader {
 	opacity: 0;
 }
+
+@media screen and (max-width: 500px) {
+	
+	#container div {
+		font-family: times;
+		text-transform: uppercase;
+		letter-spacing: .015em;
+	    height: 20vw;
+	    padding: 100px 0 100px 0;
+	    font-size: 1em;
+	    color: black;
+	    text-shadow: 2px 2px rgb(255,40,40);
+	    text-align: center;
+}
